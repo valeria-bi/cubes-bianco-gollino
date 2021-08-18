@@ -13,6 +13,15 @@ Il prato e la strada sono stati generati attraverso una HeightMap, cioè un'imma
 Il drago è stato realizzato applicando delle texture su di esso. Inoltre è stata implementata l'animazione delle ali e del drago stesso che ruota sopra la scena. Ci siamo ispirati al seguente modello 3D: https://sketchfab.com/3d-models/ender-dragon-9cf16e5afd834f909a4796d1f9d4ec0c
 Infine, il castello è dotato di quattro torrette di controllo ai lati più una di maggiore altezza in posizione centrale.
 
+## Struttura del progetto 
+
+* index.html: contiene il codice di partenza in cui vengono insiriti gli elementi e viene creato il terreno;
+* Video: contine il video utilizzato per la realizzazione del README;
+* immagini: contiene le immagini utilizzate per la realizzazione del README e del journal.md;
+* lib: la cartella contiene le librerie *three.js* utlizzate per il progetto;
+* script: la cartella contiene un file *three.js* dove sono definiti i vari elementi della scena (castello, drago e alberi);
+* textures: contiene le texture del drago.
+
 ## Risultati
 
 Vengono riportati i risultati ottenuti.
@@ -30,4 +39,9 @@ Vista nel dettaglio del drago realizzato interamente da cubi.
 Breve video della scena:
 
 ![Animazione scena](Video/videoScena.gif)
+
+
+## Implementazione
+
+
 
