@@ -28,5 +28,6 @@ Vista nel dettaglio del drago realizzato interamente da cubi.
 ![Realizzazione del drago](immagini/Drago2.png)
 
 Breve video della scena:
+
 ![Animazione scena](Video/videoScena.gif)
 
