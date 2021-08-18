@@ -26,3 +26,7 @@ Scena vista da un'angolazione in cui si vede il drago muoversi.
 Vista nel dettaglio del drago realizzato interamente da cubi.
 ![Realizzazione del drago](immagini/Drago1.png)
 ![Realizzazione del drago](immagini/Drago2.png)
+
+Breve video della scena:
+![Animazione scena](Video/videoScena.mp4)
+
