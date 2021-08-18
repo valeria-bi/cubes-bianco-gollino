@@ -10,7 +10,7 @@ Valeria Bianco (133886) e Alessandro Gollino (134230)
 
 Il progetto rappresenta una scena interamente creata da cubi. Gli elementi che la compongono sono: un castello, un prato con una strada costeggiata da dei pini e un drago che vola sorvegliando il castello. 
 Il prato e la strada sono stati generati attraverso una HeightMap, cioè un'immagine in scala di grigi che rappresenta le altezze.
-Il drago è stato realizzato applicando delle texture su di esso. Inoltre è stata implementata l'animazione delle ali e del drago stesso che ruota sopra la scena. 
+Il drago è stato realizzato applicando delle texture su di esso. Inoltre è stata implementata l'animazione delle ali e del drago stesso che ruota sopra la scena. Ci siamo ispirati al seguente modello 3D: https://sketchfab.com/3d-models/ender-dragon-9cf16e5afd834f909a4796d1f9d4ec0c
 Infine, il castello è dotato di quattro torrette di controllo ai lati più una di maggiore altezza in posizione centrale.
 
 ## Risultati
