@@ -4,6 +4,7 @@
 
 * sperimentato la HeightMap
 * idee per il progetto da realizzare: terreno roccioso, castello medievale, drago
+![Progettazione della scena](immagini/Progetto.jpeg)
 
 ## 10 maggio 2021
 
