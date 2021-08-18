@@ -41,7 +41,13 @@ Breve video della scena:
 ![Animazione scena](Video/videoScena.gif)
 
 
-## Implementazione
+## Implementazione: 
 
+Per prima cosa ci siamo occupati della creazione della HeightMap realizzata con l'ausilio di PhotoShop. A partire da questa è stato generato il terreno della scena assegnando alle parti più chiare il colore verde che rappresenta il prato e a quelle più scure il grigio che rappresenta la strada e il punto di appoggio del castello.
+Successivamente abbiamo poi realizzato il castello e il drago inidpendentemente e poi collocati nella scena.
+Il drago è stato animato in modo che percorresse una traiettoria circolare sopra la scena. Inoltre, alle ali è stato dato il movimento tipico delle creature volanti: ciò è stato realizzato imponendo una rotazione limitata. 
+Gli alberi sono stati posizionati ai lati della strada che conduce alla fortezza. Quest'ultima è formata da quattro torri di controllo posizionate ad ognuno degli angoli. Inoltre, vi è una casa centrale dotata di una torre più alta di controllo.
 
+## Credits:
 
+Modello ispirazione drago:  https://sketchfab.com/3d-models/ender-dragon-9cf16e5afd834f909a4796d1f9d4ec0c
