@@ -1,8 +1,7 @@
 function loadTexture(file) {
-
-		var textureL = new THREE.TextureLoader();
-		var texture = textureL.load(file);
-		return texture;
+	var textureL = new THREE.TextureLoader();
+	var texture = textureL.load(file);
+	return texture;
 }
 
 var textureDrago = loadTexture( "textures/pelle3.jpg" );
@@ -173,7 +172,6 @@ function creaCastello(posX, posY, posZ){
 		torreC.add(meshTettoC);
 	}
 
-
 	castello.add(creaTorre(3.5,0.5,3.5)); //torre destra avanti
 	castello.add(creaTorre(-3.5,0.5,3.5)); //torre sinistra avanti
 	castello.add(creaTorre(-3.5,0.5,-3.5)); //torre destra dietro
@@ -257,7 +255,6 @@ var drago = new THREE.Object3D();
 
 function creaDrago(posX, posY, posZ){
 
-	
 	var corpo = new THREE.Object3D();
 	var guglieCorpo = new THREE.Object3D();
 	var coda = new THREE.Object3D();
@@ -379,12 +376,13 @@ function creaDrago(posX, posY, posZ){
 	for(i=0; i<7; i++){
 		var decremento = 0.3;
 		var geometriaCubi = new THREE.BoxGeometry( 1.93- decremento * i, 0.1, 0.4);
-	    var materialCubi = new THREE.MeshBasicMaterial({map: textureAli});
-	    var meshCubi = new THREE.Mesh(geometriaCubi, materialCubi);	
-	    meshCubi.position.z -= 0.8 + 0.4 * i; 
-	    meshCubi.position.x -=decremento*i/2;
-	   	alaSx1.add(meshCubi);
+		var materialCubi = new THREE.MeshBasicMaterial({map: textureAli});
+		var meshCubi = new THREE.Mesh(geometriaCubi, materialCubi);
+		meshCubi.position.z -= 0.8 + 0.4 * i;
+		meshCubi.position.x -=decremento*i/2;
+		alaSx1.add(meshCubi);
 	}
+
 	alaSx1.position.set(0,0.15,0);
 	alaSx1.rotation.x = -15*Math.PI/180;
 	alaSx.position.set(0,0.3,-0.65);
@@ -401,15 +399,17 @@ function creaDrago(posX, posY, posZ){
 		//meshCubiIniziale.position.x -=i/2;
 		alaDx.add(meshCubiIniziale);
 	}
+
 	for(i=0; i<7; i++){
 		var decremento = 0.3;
 		var geometriaCubi = new THREE.BoxGeometry(1.93- decremento * i, 0.1, 0.4);
-	    var materialCubi = new THREE.MeshBasicMaterial({map:textureAli});
-	    var meshCubi = new THREE.Mesh(geometriaCubi, materialCubi);	
-	    meshCubi.position.z += 0.8 + 0.4 * i; 
-	    meshCubi.position.x -=decremento*i/2;
-	   	alaDx1.add(meshCubi);
+		var materialCubi = new THREE.MeshBasicMaterial({map:textureAli});
+		var meshCubi = new THREE.Mesh(geometriaCubi, materialCubi);	
+		meshCubi.position.z += 0.8 + 0.4 * i; 
+		meshCubi.position.x -=decremento*i/2;
+		alaDx1.add(meshCubi);
 	}
+
 	alaDx1.position.set(0,0.15,0);
 	alaDx1.rotation.x = 15*Math.PI/180;
 	alaDx.position.set(0,0.3,0.65);
@@ -420,7 +420,6 @@ function creaDrago(posX, posY, posZ){
 	drago.position.set(posX, posY, posZ);
 	drago.scale.set(1.5, 1.5, 1.5);
 	
-
 	return drago;
 
 }
@@ -454,7 +453,6 @@ function creaZampeDrago(xCoscia, yCoscia, zCoscia, xPolpaccio, yPolpaccio, zPolp
  zRotCoscia, posXPolp, posYPolp, posZPolp, zRotPolp, posXPie, posYPie, posZPie, zRotPie){
 
 	var zampa = new THREE.Object3D();
-
 	//coscia
 	var geometriaCoscia = new THREE.BoxGeometry(xCoscia, yCoscia, zCoscia);
 	var materialCoscia = new THREE.MeshBasicMaterial({map: textureDrago});
