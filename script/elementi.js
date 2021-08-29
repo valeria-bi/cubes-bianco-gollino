@@ -504,10 +504,7 @@ function creaPino (posX, posY, posZ){
 	var foglie = new THREE.Object3D();
 			
 	//tronco
-	var x = 1;
-	var y = 8;
-	var z = 1;
-	var geometriaTronco = new THREE.BoxGeometry(x,y,z);
+	var geometriaTronco = new THREE.BoxGeometry(1,8,1);
 	var materialTronco = new THREE.MeshBasicMaterial({color: 0x654321});
 	var meshTronco = new THREE.Mesh(geometriaTronco, materialTronco);
 	pino.add(meshTronco);
@@ -515,10 +512,9 @@ function creaPino (posX, posY, posZ){
 	//foglie
 	for(var i=0; i < 5; i++){
 		var decremento = 2;
-		var geometriaFoglie = new THREE.BoxGeometry((x *3) - (i/decremento), 2 ,(z *3) - (i/decremento));
+		var geometriaFoglie = new THREE.BoxGeometry(3 - (i/decremento), 2 , 3 - (i/decremento));
 		var materialFoglie = new THREE.MeshBasicMaterial({color: 0x008000});
 		var meshFoglie = new THREE.Mesh(geometriaFoglie, materialFoglie);	
-		meshFoglie.name = "foglie";	
 		meshFoglie.position.y += i; 
 		pino.add(meshFoglie);
 	}	
